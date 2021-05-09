@@ -1,0 +1,287 @@
+/* ------------------tag selector-------------------- */
+body {
+    background-color: #004d4d;
+    margin: 0px;
+    padding-bottom: 0;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+main {
+    margin: 50px 80px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #002e2e;
+    box-shadow: -1px -1px 5px black;
+    margin-bottom: 0;
+}
+
+
+
+header {
+    margin: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #002e2e;
+    box-shadow: 3px 3px 5px black;
+}
+
+nav {
+    background-color: #003E3E;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+    box-shadow: 3px 3px 5px black;
+    width: 100%;
+    top: 0;
+    z-index: 95;
+
+}
+
+.fixed-nav nav {
+    position: fixed;
+}
+
+.clip {
+    text-align: center;
+    font-size: 80px;
+    margin: 0px 50px;
+    padding: 20px 20px;
+    font-style: oblique;
+    font-weight: 900;
+    /* text-shadow: 0px 0px 10px black inset; */
+    background: url(../img/1-lactobacillus-rhamnosu.jpg) center center no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px white;
+}
+
+h2 {
+    text-shadow: 1px 1px 5px black;
+}
+
+h2, h3, h4 {
+    color: #EA7500;
+}
+
+p {
+    line-height: 2em;
+    font-size: 18px;
+}
+
+header figure {
+    float: right;
+}
+
+hr {
+    border: 2px solid #EA7500;
+    box-shadow: 2px 2px 5px black;
+}
+
+a:link {
+    color: #ffc992;
+    text-decoration: none;
+}
+
+a:hover {
+    filter: drop-shadow(3px 3px 2px rgba(0,0,0,.5)); /*圖片陰影用此效果比較好*/
+    color: #ffc992;
+    text-decoration: underline;
+}
+
+#contactme a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    filter: none;
+}
+
+a:visited {
+    color: #ffc992;
+}
+
+/* -------------------#id selector---------------- */
+#intro {
+    display: flex;
+}
+
+#introText {
+    width: 80%;
+    margin-right: 10px;
+}
+
+#introInfor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #003E3E;
+    width: 20%;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+#introInfor h3 {
+    text-align: center;
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: #002e2e;
+    
+}
+
+#introInfor p {
+    text-align: center;
+    font-style: oblique;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+#genome img {
+    background-color: white;
+    margin: 10px;
+}
+
+figure {
+    background-color: #003E3E;
+    width: auto;
+    float: right;
+    box-shadow: 3px 3px 5px black;
+    margin-right: 0;
+}
+
+#genome figure figcaption {
+    margin: 0px 10px 10px 10px;
+}
+
+#lrhgg img {
+    background-color: white;
+    margin: 10px;
+}
+
+#lrhgg figure figcaption {
+    width: 300px;
+    margin: 0px 10px 10px 10px;
+}
+
+#history, #medical {
+    padding-left: 20px;
+    border-left: 2.5px solid #EA7500;
+    margin-left: 30px;
+}
+
+#medical section {
+    margin: 30px;
+}
+
+#contactme img {
+    margin: 0px 5px;
+}
+
+footer section {
+    padding: 20px;
+}
+
+#contactme h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main>section {
+    padding-top: 50px;
+}
+
+#ref a:link, #ref a:visited  {
+    color: white;
+}
+/* ------------------.classs selector---------------- */
+
+/* ------------------drop-down-menu set------------------------ */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul.drop-down-menu {
+    border: none;
+    display: inline-block;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    font-size: 18px;
+}
+
+ul.drop-down-menu li {
+    position: relative;
+    white-space: nowrap;  /*字永不換行*/
+    margin: 0px;
+    /* border-right: #ccc 1px solid; */
+}
+
+/* ul.drop-down-menu > li:last-child {
+    border-right: none;
+} */
+
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
+
+ul.drop-down-menu a {
+    background-color: #003E3E;
+    color: white;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+    background-color: #002e2e;
+    color: #EA7500;
+    box-shadow: 3px 3px 5px black;
+}
+ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: #002e2e;
+    color: #EA7500;
+}
+
+/* ***** */
+
+ul.drop-down-menu ul {
+    border: none;
+    position: absolute;
+    z-index: 99;
+    left: 0px;          /*沒有作用*/
+    top: 100%;          /*距離父元素的top 1倍高度*/
+    min-width: 180px;
+}
+
+ul.drop-down-menu ul li {
+    border-bottom: #ccc 1px solid;
+}
+
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
+
+ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+    z-index: 999;
+    top: 70%;
+    left: 90%;
+}
+
+/* **** */
+
+ul.drop-down-menu ul { /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+
+/* ****** */
